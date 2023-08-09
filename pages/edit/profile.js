@@ -34,7 +34,7 @@ const profile = () => {
     }, [userData]);
     const saveProfile = e =>{
         e.preventDefault();
-        fetch(`/save/profile`,{
+        fetch(`https://linkspectrum-backend.onrender.com/save/profile`,{
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
